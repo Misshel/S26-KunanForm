@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/check.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Kunan | Formulario</title>
 </head>
@@ -35,8 +36,8 @@
           </div>
           <div class="">
             <label for="" class="">Sexo</label><br>
-            <input class="check" type="checkbox" name="sexo" value="Masculino" id = "masculino" required><label for ="masculino">Maxculino</label> <br>
-            <input class="check" type="checkbox" name="sexo" value="Femenino" id = "femenino"><label for ="femenino">Femenino</label>
+            <input id="radio1" type="radio" name="radio" value="1" required=""><label for ="masculino"><span><span></span></span>Maxculino</label> <br>
+            <input id="radio2" type="radio" name="radio" value="2"><label for ="femenino"><span><span></span></span>Femenino</label>
           </div>
           <div class="">
             <label for="">Profesión</label><br>
@@ -61,19 +62,76 @@
             <select class="" id = "residencia" name="" required>
             </select>
           </div>
-          <div class="cargo">
+          <div id="cargo">
             <label for="cargo">Cargo en la organización</label><br>
             <input type="text" id = "cargo" name="" value="" required>
           </div>
-          <div class="">
+          <div id="organizacion">
             <label for="">Tiempo en la organización en cantidad de meses</label><br>
             <input id = "" type="text" name="" value="" required>
           </div>
         </div>
       </div>
+      <div class="Form-parte2">
+        <h2>Datos de la entidad postulante</h2>
+        <div class="izquierda">
+          <div class="">
+            <label for="">Nombre de Entidad</label><br>
+            <input id = "" type="text" name="" value="" required>
+          </div>
+          <div class="">
+            <label for="">¿Cuándo comenzaron a operar? (dd/mm/yyyy)</label><br>
+            <input id = "" type="text" name="" value="" required>
+          </div>
+          <div class="">
+            <label for="">Tipo de organizaciòn</label><br>
+            <select id = "" class="" size="4" name="" required>
+              <option value="">ONG</option>
+              <option value="">Fundaciones</option>
+              <option value="">Asociación Civil </option>
+              <option value="">Empresa</option>
+              <option value="">Persona Natural</option>
+              <option value="">Otros</option>
+            </select>
+          </div>
+          <div class="">
+            <label for="">Otros</label><br>
+            <input type="text" id = "" name="" value="">
+          </div>
+          <div class="">
+            ¿Está inscrita en Registros Públicos?<span id="asterisco">*</span><br>
+            <input type="radio" name="" id= "Si" value="Si" required><label for="">Si</label><br>
+            <input type="radio" name="" id="No" value="No"><label for="">No</label>
+          </div>
+        </div>
+        <div class="derecha">
+          <div class="" id = "ambito">
+            <p>Ámbito de intervención:<br>
+              ¿Cuáles son las regiones, provincias y distritos donde se sitúan sus operaciones a lo largo de toda la cadena del negocio?</p><br>
+            <label for="" >Regiones</label><br>
+          </div>
+          <div class="">
+            <p class="indicar">Indicar las provincias en las que interviene tu emprendimiento respecto  a las regiones marcadas anteriormente.</p>
+            <label for="">Provincia</label><br>
+            <input type="text" name="" value="" required>
+          </div>
+          <div class="">
+            <p class="indicar">Indicar las distritos en las que interviene tu emprendimiento respecto  a las provincias marcadas anteriormente.</p>
+            <label for="">Distrito</label><br>
+            <input type="text" name="" value="" required>
+          </div>
+          <div class="">
+            <p>Si responde "SÍ", llena las siguientes opciones:</p>
+            <label for="">RUC</label><br>
+            <input type="text" id = "" name="" value="">
+          </div>
+          <div class="">
+            <label for="">¿Cuándo se constituyeron?(dd/mm/yyyy)</label><br>
+            <input type="text" id = "" name="" value="">
+          </div>
+        </div>
+
     </form>
-    <div class="select-color">
-        <input type="checkbox">
   </section>
 
   <script src="assets/js/app.js"  type="text/javascript"></script>

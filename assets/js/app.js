@@ -1,11 +1,11 @@
 window.addEventListener("load",function(){
   var lugar = document.getElementById("lugar");
   var live = document.getElementById("live");
-  var intervencion = document.getElementById("intervencion");
+  var intervencion = document.getElementById("ambito");
 
   region(lugar);
-  // region(live);
-  // regionInter(intervencion);
+  region(residencia);
+  inter(ambito);
 
 
 });
@@ -23,6 +23,24 @@ function region(datoRegion){
     option.value = departamentos[i];
     option.innerHTML = departamentos[i];
     paralelo.appendChild(option);
+  }
+  datoRegion.appendChild(paralelo);
+}
+
+function inter(datoRegion){
+  var paralelo = document.createDocumentFragment();
+  for(i=0; i<departamentos.length; i++){
+    var check = document.createElement("input");
+    check.setAttribute("class","check")
+    check.type = "checkbox";
+    check.value = departamentos[i];
+
+    var label =document.createElement("label");
+    var br = document.createElement("br");
+    label.innerHTML = departamentos[i];
+    paralelo.appendChild(check);
+    paralelo.appendChild(label);
+    paralelo.appendChild(br);
   }
   datoRegion.appendChild(paralelo);
 }
